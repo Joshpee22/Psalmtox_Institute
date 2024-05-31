@@ -1,1 +1,1 @@
-Music School Website
+# educational.github.io
