@@ -708,3 +708,17 @@ footer */
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
+
+@media (max-width: 700px) {
+  .apply {
+    text-align: center; /* Center the button */
+    margin-top: 20px; /* Add some space from other content */
+  }
+
+  .apply a {
+    display: inline-block; /* Ensure the button is an inline block */
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    font-size: 14px; /* Increase font size for readability */
+  }
+}
+
