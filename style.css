@@ -620,17 +620,17 @@ footer */
   margin-top: 50px;
 }
 .about-us img {
-  width: 80%;
+  width: 60%;
   margin: auto;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .about-col {
   flex-basis: 48%;
-  padding: 30px 2px;
+  padding: 20px 2px;
 }
 .about-col img{
-  width: 100%;
+  width: 50%;
 }
 .about-col h1{
   padding-top: 0;
