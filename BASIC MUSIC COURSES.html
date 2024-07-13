@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Psalmtox Music | The Best Music Institute in Lagos Nigeria</title>
     <link rel="stylesheet" href="style.css" />
@@ -14,9 +13,9 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <body>
-    </title>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+  </head>
+  <body>
     <section class="header">
       <nav>
         <a href="index.html"><img src="./images/watermark.png" alt="" /></a>
@@ -29,9 +28,33 @@
             <li class="dropdown">
               <a href="./course.html" class="dropdown-toggle">COURSES</a>
               <ul class="dropdown-menu">
-                <li><a href="#">BASIC MUSIC COURSES</a></li>
-                <li><a href="#">DIPLOMA IN MUSIC</a></li>
-                <li><a href="#">Advanced Diploma</a></li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-toggle" onclick="toggleSubMenu(event)">BASIC MUSIC COURSES</a>
+                  <ul class="dropdown-menu2">
+                    <li><a href="#">Musical Instrument Classes</a></li>
+                    <li><a href="#">Vocal Clinic Sessions</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-toggle" onclick="toggleSubMenu(event)">DIPLOMA IN MUSIC</a>
+                  <ul class="dropdown-menu2">
+                    <li><a href="#">Diploma In Music Performance</a></li>
+                    <li><a href="#">Diploma In Music Production</a></li>
+                    <li><a href="#">Diploma In Concert Production</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="dropdown-toggle" onclick="toggleSubMenu(event)">ADVANCED DIPLOMA</a>
+                  <ul class="dropdown-menu2">
+                    <li><a href="#">Adv. Diploma In Concert Production</a></li>
+                    <li><a href="#">Adv. Diploma In Live Production</a></li>
+                    <li><a href="#">Adv. Diploma In Digital & Audio Tech</a></li>
+                    <li><a href="#">Adv. Diploma In Music Business</a></li>
+                    <li><a href="#">Adv. Diploma In Music Performance</a></li>
+                    
+                    
+                  </ul>
+                </li>
                 <li><a href="#">CHURCH MUSIC MINISTRY TRAINING</a></li>
               </ul>
             </li>
@@ -47,18 +70,15 @@
           Our experienced faculty will guide you through performance, theory, composition,
           <br> and industry insights, preparing you for a successful career in our music school
         </p>
-       
         <a href="#" class="hero-btn">Visit Us</a>
       </div>
-     
     </section>
     
-        
     <!-- about us content -->
 
     <section class="about-us">
-      <div class="row" >
-        <div class="about-col" >
+      <div class="row">
+        <div class="about-col">
           <h1>We are the best Music college in Lagos Nigeria</h1>
           <p>Music Production: Digital Audio Productions, Sound Tech etc.  Music Business Professional Courses - Concert Production, Artist Management, Tours, Royalties, and Contracts Musical Instrument Sales and Installations We offer classes from Basic Music Training to an Advance Diploma Music Certification, with examination certificates with the ABRSM, ROCK SCHOOL, etc. Our Classes are physical & Virtual, Home classes with 100% Theory and Practical; Classes hold on weekdays & weekends." Vision: Building an all-round Musician…</p>
           <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
@@ -69,17 +89,16 @@
       </div>
     </section>
 
-
+    <!-- footer content -->
 
     <section class="footer">
-     
       <div class="icons">
         <i class="fa-brands fa-facebook"></i>
         <i class="fa-brands fa-twitter"></i>
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
       </div>
-      <p> 58b, Kudirat Abiola way Ikeja, Lagos Nigeria
+      <p>58b, Kudirat Abiola way Ikeja, Lagos Nigeria
         © 2024 Psalmtox Music Institute. All Rights Reserved.</p>
     </section>
 

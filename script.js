@@ -3,7 +3,7 @@ function showMenu(){
     navLinks.style.top = '0';
 }
 function hideMenu(){
-    navLinks.style.top = '-800px'
+    navLinks.style.top = '-800px';
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,19 +16,30 @@ document.addEventListener('DOMContentLoaded', () => {
         images[currentIndex].style.opacity = 1;
     }
 
-    setInterval(showNextImage, 5000); // Change image every 3 seconds
+    setInterval(showNextImage, 5000); // Change image every 5 seconds
 });
 
-
-
+let hideTimeout;
 
 function toggleSubMenu(event) {
     event.preventDefault(); // Prevent the default anchor click behavior
     const subMenu = event.target.nextElementSibling; // Get the next sibling element (sub-menu)
     
     if (subMenu.style.display === "block") {
-        subMenu.style.display = "none"; // Hide the sub-menu if it's already visible
+        hideTimeout = setTimeout(() => {
+            subMenu.style.display = "none"; // Hide the sub-menu after delay
+        }, 500); // Delay hiding by 500ms
     } else {
         subMenu.style.display = "block"; // Show the sub-menu
     }
+
+    subMenu.addEventListener('mouseenter', () => {
+        clearTimeout(hideTimeout); // Clear timeout when hovered over
+    });
+
+    subMenu.addEventListener('mouseleave', () => {
+        hideTimeout = setTimeout(() => {
+            subMenu.style.display = "none"; // Hide the sub-menu after delay
+        }, 500); // Delay hiding by 500ms
+    });
 }
