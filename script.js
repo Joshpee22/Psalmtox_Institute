@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(showNextImage, 5000); // Change image every 3 seconds
 });
+
+
+
+
+function toggleSubMenu(event) {
+    event.preventDefault(); // Prevent the default anchor click behavior
+    const subMenu = event.target.nextElementSibling; // Get the next sibling element (sub-menu)
+    
+    if (subMenu.style.display === "block") {
+        subMenu.style.display = "none"; // Hide the sub-menu if it's already visible
+    } else {
+        subMenu.style.display = "block"; // Show the sub-menu
+    }
+}
